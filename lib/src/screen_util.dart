@@ -64,13 +64,13 @@ class ScreenUtil {
 
   static double get scaleWidth => width / _designW;
 
-  static double get scaleHeigth => height / _designH;
+  static double get scaleHeight => height / _designH;
 
   static double setWidth(double width){
     return width * scaleWidth;
   }
 
   static double setHeight(double height){
-    return height * scaleHeigth;
+    return height * scaleHeight;
   }
 }
