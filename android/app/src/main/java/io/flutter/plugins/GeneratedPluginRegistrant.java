@@ -3,7 +3,6 @@ package io.flutter.plugins;
 import io.flutter.plugin.common.PluginRegistry;
 import io.flutter.plugins.pathprovider.PathProviderPlugin;
 import io.flutter.plugins.sharedpreferences.SharedPreferencesPlugin;
-import com.ethras.simplepermissions.SimplePermissionsPlugin;
 import io.flutter.plugins.urllauncher.UrlLauncherPlugin;
 import io.flutter.plugins.webviewflutter.WebViewFlutterPlugin;
 
@@ -17,7 +16,6 @@ public final class GeneratedPluginRegistrant {
     }
     PathProviderPlugin.registerWith(registry.registrarFor("io.flutter.plugins.pathprovider.PathProviderPlugin"));
     SharedPreferencesPlugin.registerWith(registry.registrarFor("io.flutter.plugins.sharedpreferences.SharedPreferencesPlugin"));
-    SimplePermissionsPlugin.registerWith(registry.registrarFor("com.ethras.simplepermissions.SimplePermissionsPlugin"));
     UrlLauncherPlugin.registerWith(registry.registrarFor("io.flutter.plugins.urllauncher.UrlLauncherPlugin"));
     WebViewFlutterPlugin.registerWith(registry.registrarFor("io.flutter.plugins.webviewflutter.WebViewFlutterPlugin"));
   }

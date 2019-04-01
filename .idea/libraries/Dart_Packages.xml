@@ -107,13 +107,6 @@
             </list>
           </value>
         </entry>
-        <entry key="simple_permissions">
-          <value>
-            <list>
-              <option value="E:/Program Files/flutter/.pub-cache/hosted/pub.flutter-io.cn/simple_permissions-0.1.9/lib" />
-            </list>
-          </value>
-        </entry>
         <entry key="sky_engine">
           <value>
             <list>
@@ -207,7 +200,6 @@
       <root url="file://E:/Program Files/flutter/.pub-cache/hosted/pub.flutter-io.cn/pedantic-1.4.0/lib" />
       <root url="file://E:/Program Files/flutter/.pub-cache/hosted/pub.flutter-io.cn/quiver-2.0.1/lib" />
       <root url="file://E:/Program Files/flutter/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences-0.5.1+2/lib" />
-      <root url="file://E:/Program Files/flutter/.pub-cache/hosted/pub.flutter-io.cn/simple_permissions-0.1.9/lib" />
       <root url="file://E:/Program Files/flutter/.pub-cache/hosted/pub.flutter-io.cn/source_span-1.5.4/lib" />
       <root url="file://E:/Program Files/flutter/.pub-cache/hosted/pub.flutter-io.cn/stack_trace-1.9.3/lib" />
       <root url="file://E:/Program Files/flutter/.pub-cache/hosted/pub.flutter-io.cn/stream_channel-1.6.8/lib" />

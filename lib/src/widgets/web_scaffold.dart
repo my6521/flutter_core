@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-//js回调
-typedef receiveMessage = void Function(JavascriptMessage message);
+typedef onReceiveMessage = void Function(JavascriptMessage message);
 
 class WebScaffold extends StatefulWidget {
 
@@ -11,13 +10,13 @@ class WebScaffold extends StatefulWidget {
     this.title,
     this.id,
     this.url,
-    this.receiveMessage
+    this.onReceiveMessage,
   }) : super(key: key);
 
   final String title;
   final String id;
   final String url;
-  final Function receiveMessage;
+  final Function onReceiveMessage;
 
   @override
   State<StatefulWidget> createState() {
@@ -28,11 +27,13 @@ class WebScaffold extends StatefulWidget {
 class WebScaffoldState extends State<WebScaffold> {
   @override
   void initState() {
+    // TODO: implement initState
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
+    // TODO: implement build
     return new Scaffold(
       appBar:new AppBar(
         title: Text(widget.title),
@@ -64,7 +65,7 @@ class WebScaffoldState extends State<WebScaffold> {
     return JavascriptChannel(
         name: 'Flutter',
         onMessageReceived: (JavascriptMessage message) {
-          widget.receiveMessage(message);
+          widget.onReceiveMessage(message);
         });
   }
 

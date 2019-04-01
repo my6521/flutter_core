@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="925e6540-eada-4457-8b69-d16cb259be0c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/flutter_core.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_core.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/common/permission_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/common/permission_manager.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/widgets/web_scaffold.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/widgets/web_scaffold.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -91,49 +99,83 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="dart" value="4" />
+          <entry key="dart" value="10" />
+          <entry key="java" value="1" />
+          <entry key="properties" value="1" />
           <entry key="yaml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Dart" value="4" />
+          <entry key="Dart" value="10" />
+          <entry key="JAVA" value="1" />
+          <entry key="Properties" value="1" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dart" value="95" />
-          <entry key="yaml" value="1" />
+          <entry key="dart" value="148" />
+          <entry key="yaml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Dart" value="95" />
-          <entry key="YAML" value="1" />
+          <entry key="Dart" value="148" />
+          <entry key="YAML" value="11" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/flutter_core.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+            <state relative-caret-position="396">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#23#82#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/widgets/web_scaffold.dart">
+        <entry file="file://$PROJECT_DIR$/android/local.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="59" column="3" lean-forward="true" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
+            <state relative-caret-position="22">
+              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/src/widgets/swiper.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#20#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/src/common/local_storage.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -150,12 +192,40 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pubspec.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="374">
+              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/src/widgets/web_scaffold.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/src/common/permission_manager.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="50" selection-start-column="2" selection-end-line="21" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/src/common/event_bus.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-198" />
           </provider>
         </entry>
       </file>
@@ -195,10 +265,12 @@
         <option value="$PROJECT_DIR$/lib/src/timer_util.dart" />
         <option value="$PROJECT_DIR$/lib/src/object_util.dart" />
         <option value="$PROJECT_DIR$/lib/src/money_util.dart" />
+        <option value="$PROJECT_DIR$/lib/main.dart" />
         <option value="$PROJECT_DIR$/lib/src/widgets/swiper.dart" />
+        <option value="$PROJECT_DIR$/lib/src/common/permission_manager.dart" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
-        <option value="$PROJECT_DIR$/lib/src/widgets/web_scaffold.dart" />
         <option value="$PROJECT_DIR$/lib/flutter_core.dart" />
+        <option value="$PROJECT_DIR$/lib/src/widgets/web_scaffold.dart" />
       </list>
     </option>
   </component>
@@ -260,7 +332,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.force.activate" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flutter_supplier" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -355,13 +427,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/common/http/http_config.dart" />
     <entry file="file://$PROJECT_DIR$/lib/common/http/http_manager.dart" />
-    <entry file="file://$PROJECT_DIR$/android/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="38" lean-forward="true" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/event_data.dart" />
     <entry file="file://$PROJECT_DIR$/lib/src/http_config.dart" />
     <entry file="file://E:/Program Files/flutter/packages/flutter/lib/src/material/constants.dart">
@@ -393,30 +458,29 @@
     <entry file="file://$PROJECT_DIR$/lib/src/timer_util.dart" />
     <entry file="file://$PROJECT_DIR$/lib/src/object_util.dart" />
     <entry file="file://$PROJECT_DIR$/lib/src/money_util.dart" />
-    <entry file="file://$PROJECT_DIR$/lib/src/widgets/swiper.dart">
+    <entry file="file://$PROJECT_DIR$/lib/src/common/event_bus.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-198" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+    <entry file="file://$PROJECT_DIR$/lib/src/common/local_storage.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="484">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/widgets/web_scaffold.dart">
+    <entry file="file://$PROJECT_DIR$/android/local.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="59" column="3" lean-forward="true" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="22">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -430,10 +494,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/common/permission_manager.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="50" selection-start-column="2" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/widgets/swiper.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/flutter_core.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        <state relative-caret-position="396">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#23#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/widgets/web_scaffold.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
         </state>
       </provider>
     </entry>
