@@ -1,13 +1,13 @@
 library flutter_core;
 
-export 'package:flutter_core/src/http_manager.dart';
-export 'package:flutter_core/src/local_storage.dart';
-export 'package:flutter_core/src/permission_manager.dart';
-export 'package:flutter_core/src/event_bus.dart';
-export 'package:flutter_core/src/screen_util.dart';
-export 'package:flutter_core/src/regex_util.dart';
-export 'package:flutter_core/src/timer_util.dart';
-export 'package:flutter_core/src/object_util.dart';
+export 'package:flutter_core/src/common/http_manager.dart';
+export 'package:flutter_core/src/common/local_storage.dart';
+export 'package:flutter_core/src/common/permission_manager.dart';
+export 'package:flutter_core/src/common/event_bus.dart';
+export 'package:flutter_core/src/common/screen_util.dart';
+export 'package:flutter_core/src/common/regex_util.dart';
+export 'package:flutter_core/src/common/timer_util.dart';
+export 'package:flutter_core/src/common/object_util.dart';
 
 /// A Calculator.
 class Calculator {
