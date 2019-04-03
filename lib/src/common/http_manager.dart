@@ -92,11 +92,9 @@ class HttpManager {
       ///保存token
       _map[url] = cancelToken;
 
-      Options options = Options(
-          method: method,
-          contentType: ContentType.parse("application/x-www-form-urlencoded"));
+      Options options = Options(method: method);
 
-      Response response = await _dio.request(url,
+      Response response = await _dio.post(url,
           data: data, options: options, cancelToken: cancelToken);
 
       if (context != null) {
@@ -149,7 +147,7 @@ class HttpManager {
 
   static BaseOptions getDefOptions() {
     BaseOptions options = new BaseOptions();
-    //options.contentType = ContentType.parse("application/x-www-form-urlencoded");
+    options.contentType = ContentType.parse("application/json");
     options.connectTimeout = 1000 * 10;
     options.receiveTimeout = 1000 * 20;
     return options;
@@ -172,8 +170,6 @@ class HttpManager {
     _map[url]?.cancel(url);
   }
 }
-
-
 
 class HttpConfig {
   HttpConfig({

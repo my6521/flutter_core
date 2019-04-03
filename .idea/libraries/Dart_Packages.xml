@@ -177,13 +177,6 @@
             </list>
           </value>
         </entry>
-        <entry key="webview_flutter">
-          <value>
-            <list>
-              <option value="E:/Program Files/flutter/.pub-cache/hosted/pub.flutter-io.cn/webview_flutter-0.3.5+2/lib" />
-            </list>
-          </value>
-        </entry>
       </option>
     </properties>
     <CLASSES>
@@ -209,7 +202,6 @@
       <root url="file://E:/Program Files/flutter/.pub-cache/hosted/pub.flutter-io.cn/typed_data-1.1.6/lib" />
       <root url="file://E:/Program Files/flutter/.pub-cache/hosted/pub.flutter-io.cn/url_launcher-4.2.0+3/lib" />
       <root url="file://E:/Program Files/flutter/.pub-cache/hosted/pub.flutter-io.cn/vector_math-2.0.8/lib" />
-      <root url="file://E:/Program Files/flutter/.pub-cache/hosted/pub.flutter-io.cn/webview_flutter-0.3.5+2/lib" />
       <root url="file://E:/Program Files/flutter/bin/cache/pkg/sky_engine/lib" />
       <root url="file://E:/Program Files/flutter/packages/flutter/lib" />
       <root url="file://E:/Program Files/flutter/packages/flutter_test/lib" />
