@@ -37,20 +37,9 @@ class HttpManager {
     return _dio;
   }
 
-  request(String url,
-      {data, method = "get", headers, onReceiveProgress, context}) async {
+  Future<BaseResp<T>> request<T>(String url,
+      {data, method = "get", headers, onReceiveProgress}) async {
     try {
-      if (context != null) {
-        showDialog(
-            context: context,
-            barrierDismissible: false,
-            builder: (_) {
-              return Center(
-                child: CircularProgressIndicator(),
-              );
-            });
-      }
-
       CancelToken cancelToken = CancelToken();
 
       ///保存token
@@ -64,47 +53,35 @@ class HttpManager {
           cancelToken: cancelToken,
           onReceiveProgress: onReceiveProgress);
 
-      if (context != null) {
-        Navigator.pop(context);
+      if (response.statusCode == HttpStatus.ok) {
+        bool _status = response.data["IsSuccess"];
+        String _code = response.data["ErrorCode"];
+        String _msg = response.data["Message"];
+        T _data = response.data["Data"];
+
+        if (!_status) {
+          return new Future.error(new DioError(
+            response: response,
+            message: _msg,
+            type: DioErrorType.RESPONSE,
+          ));
+        }
+
+        return new BaseResp(_status, _code, _msg, _data);
       }
 
-      return response.data;
+      //异常抛出
+      return new Future.error(new DioError(
+        response: response,
+        message: "data parsing exception...",
+        type: DioErrorType.RESPONSE,
+      ));
     } catch (e) {
-      print("请求错误:$e");
-      return null;
-    }
-  }
-
-  post(String url, {data, method = "post", context}) async {
-    try {
-      if (context != null) {
-        showDialog(
-            context: context,
-            barrierDismissible: false,
-            builder: (_) {
-              return Center(
-                child: CircularProgressIndicator(),
-              );
-            });
-      }
-      CancelToken cancelToken = CancelToken();
-
-      ///保存token
-      _map[url] = cancelToken;
-
-      Options options = Options(method: method);
-
-      Response response = await _dio.post(url,
-          data: data, options: options, cancelToken: cancelToken);
-
-      if (context != null) {
-        Navigator.pop(context);
-      }
-
-      return response.data;
-    } catch (e) {
-      print("请求错误:$e");
-      return null;
+      //异常抛出
+      return new Future.error(new DioError(
+        message: "data parsing exception...",
+        type: DioErrorType.RESPONSE,
+      ));
     }
   }
 
@@ -197,4 +174,25 @@ class HttpConfig {
   /// 详细使用请查看dio官网 https://github.com/flutterchina/dio/blob/flutter/README-ZH.md#Https证书校验.
   /// PKCS12 证书密码.
   String pKCSPwd;
+}
+
+/// <BaseResp<T> 返回 status code msg data.
+class BaseResp<T> {
+  bool status;
+  String code;
+  String msg;
+  T data;
+
+  BaseResp(this.status, this.code, this.msg, this.data);
+
+  @override
+  String toString() {
+    StringBuffer sb = new StringBuffer('{');
+    sb.write("\"status\":\"$status\"");
+    sb.write(",\"code\":$code");
+    sb.write(",\"msg\":\"$msg\"");
+    sb.write(",\"data\":\"$data\"");
+    sb.write('}');
+    return sb.toString();
+  }
 }
