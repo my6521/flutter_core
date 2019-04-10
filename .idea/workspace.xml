@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="925e6540-eada-4457-8b69-d16cb259be0c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/common/http_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/common/http_manager.dart" afterDir="false" />
-    </list>
+    <list default="true" id="925e6540-eada-4457-8b69-d16cb259be0c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/.pub/" />
@@ -115,12 +112,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dart" value="282" />
+          <entry key="txt" value="15" />
           <entry key="yaml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Dart" value="282" />
+          <entry key="PLAIN_TEXT" value="15" />
           <entry key="YAML" value="17" />
         </counts>
       </usages-collector>
@@ -332,6 +331,14 @@
       <option name="presentableId" value="Default" />
       <updated>1553682735210</updated>
     </task>
+    <task id="LOCAL-00001" summary="http类修改">
+      <created>1554877226730</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554877226730</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -362,6 +369,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="http类修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="http类修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
