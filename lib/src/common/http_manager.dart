@@ -38,7 +38,11 @@ class HttpManager {
   }
 
   Future<BaseResp<T>> request<T>(String url,
-      {data, method = "get", headers, onReceiveProgress}) async {
+      {data,
+      queryParameters,
+      method = "get",
+      headers,
+      onReceiveProgress}) async {
     try {
       CancelToken cancelToken = CancelToken();
 
@@ -49,9 +53,12 @@ class HttpManager {
 
       Response response = await _dio.request(url,
           data: data,
+          queryParameters: queryParameters,
           options: options,
           cancelToken: cancelToken,
           onReceiveProgress: onReceiveProgress);
+
+      _printHttpLog(response);
 
       if (response.statusCode == HttpStatus.ok) {
         bool _status = response.data["IsSuccess"];
@@ -59,15 +66,9 @@ class HttpManager {
         String _msg = response.data["Message"];
         T _data = response.data["Data"];
 
-        if (!_status) {
-          return new Future.error(new DioError(
-            response: response,
-            message: _msg,
-            type: DioErrorType.RESPONSE,
-          ));
+        if (_status) {
+          return new BaseResp(_status, _code, _msg, _data);
         }
-
-        return new BaseResp(_status, _code, _msg, _data);
       }
 
       //异常抛出
@@ -145,6 +146,24 @@ class HttpManager {
 
   void cancelRequest(String url) {
     _map[url]?.cancel(url);
+  }
+
+  void _printHttpLog(Response response) {
+    print(response);
+  }
+
+  /// print Data Str.
+  void _printDataStr(String tag, Object value) {
+    String da = value.toString();
+    while (da.isNotEmpty) {
+      if (da.length > 512) {
+        print("[$tag  ]:   " + da.substring(0, 512));
+        da = da.substring(512, da.length);
+      } else {
+        print("[$tag  ]:   " + da);
+        da = "";
+      }
+    }
   }
 }
 
