@@ -4,6 +4,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:flutter_core/src/common/object_util.dart';
 
 class HttpManager {
   static HttpManager _instance;
@@ -45,6 +46,20 @@ class HttpManager {
       onReceiveProgress}) async {
     try {
       CancelToken cancelToken = CancelToken();
+
+      //移除
+      List list = new List();
+      if(ObjectUtil.isNotEmpty(queryParameters)){
+        queryParameters.forEach((k,v){
+          if(ObjectUtil.isEmpty(queryParameters[k])){
+            list.add(k);
+          }
+        });
+      }
+
+      for(var k in list){
+        queryParameters.remove(k);
+      }
 
       ///保存token
       _map[url] = cancelToken;
