@@ -48,16 +48,16 @@ class HttpManager {
       CancelToken cancelToken = CancelToken();
 
       //移除
-      List list = new List();
+      List queryParametersList = new List();
       if(ObjectUtil.isNotEmpty(queryParameters)){
         queryParameters.forEach((k,v){
           if(ObjectUtil.isEmpty(queryParameters[k])){
-            list.add(k);
+            queryParametersList.add(k);
           }
         });
       }
 
-      for(var k in list){
+      for(var k in queryParametersList){
         queryParameters.remove(k);
       }
 
