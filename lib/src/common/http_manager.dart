@@ -81,9 +81,7 @@ class HttpManager {
         String _msg = response.data["Message"];
         T _data = response.data["Data"];
 
-        if (_status) {
-          return new BaseResp(_status, _code, _msg, _data);
-        }
+        return new BaseResp(_status, _code, _msg, _data);
       }
 
       //异常抛出
