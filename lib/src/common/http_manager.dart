@@ -74,20 +74,25 @@ class HttpManager {
           onReceiveProgress: onReceiveProgress);
 
       _printHttpLog(response);
-
+      bool _status = false;
+      String _code;
+      String _msg;
+      T _data;
       if (response.statusCode == HttpStatus.ok) {
-        bool _status = response.data["IsSuccess"];
-        String _code = response.data["ErrorCode"];
-        String _msg = response.data["Message"];
-        T _data = response.data["Data"];
+        _status = response.data["IsSuccess"];
+        _code = response.data["ErrorCode"];
+        _msg = response.data["Message"];
+        _data = response.data["Data"];
 
-        return new BaseResp(_status, _code, _msg, _data);
+        if (_status) {
+          return new BaseResp(_status, _code, _msg, _data);
+        }
       }
 
       //异常抛出
       return new Future.error(new DioError(
         response: response,
-        message: "data parsing exception...",
+        message: _msg,
         type: DioErrorType.RESPONSE,
       ));
     } catch (e) {
