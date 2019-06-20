@@ -98,7 +98,7 @@ class HttpManager {
     } catch (e) {
       //异常抛出
       return new Future.error(new DioError(
-        message: "data parsing exception...",
+        message: e.message,
         type: DioErrorType.RESPONSE,
       ));
     }
