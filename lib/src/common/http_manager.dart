@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter_core/src/common/object_util.dart';
+import 'package:connectivity/connectivity.dart';
 
 class HttpManager {
   static HttpManager _instance;
@@ -38,12 +39,30 @@ class HttpManager {
     return _dio;
   }
 
+  Future<bool> isNetWorkAvailable() async{
+    var connectivityResult = await (new Connectivity().checkConnectivity());
+
+    if (connectivityResult == ConnectivityResult.mobile || connectivityResult == ConnectivityResult.wifi)
+      return true;
+    else
+      return false;
+  }
+
   Future<BaseResp<T>> request<T>(String url,
       {data,
       queryParameters,
       method = "get",
       headers,
       onReceiveProgress}) async {
+
+     bool isNetWork= await isNetWorkAvailable();
+     if(!isNetWork)
+     {
+       return new Future.error(new DioError(
+         message: "网络异常",
+         type: DioErrorType.RESPONSE,
+       ));
+     }
     try {
       CancelToken cancelToken = CancelToken();
 
@@ -98,7 +117,7 @@ class HttpManager {
     } catch (e) {
       //异常抛出
       return new Future.error(new DioError(
-        message: e.message,
+        message: "请求失败，请检查网络",
         type: DioErrorType.RESPONSE,
       ));
     }

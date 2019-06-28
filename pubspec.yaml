@@ -16,6 +16,7 @@ dependencies:
   #simple_permissions: ^0.1.9
   #webview_flutter: ^0.3.5+2
   url_launcher: ^4.0.1
+  connectivity: ^0.4.2
 
 dev_dependencies:
   flutter_test:
