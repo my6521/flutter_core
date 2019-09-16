@@ -49,7 +49,7 @@ class RegexUtil {
   /// <p>global star: 1349</p>
   /// <p>virtual operator: 170</p>
   static final String regexMobileExact =
-      "^((13[0-9])|(14[5,7])|(15[0-3,5-9])|(16[6])|(17[0,1,3,5-8])|(18[0-9])|(19[8,9]))\\d{8}\$";
+      "^(1)\\d{10}\$";
 
   /// Regex of telephone number.
   static final String regexTel = "^0\\d{2,3}[- ]?\\d{7,8}";
